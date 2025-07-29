@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Rank Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>University Rank Predictor</h1>
+        <form method="POST">
+            <label for="tuition">Tuition and Fees ($):</label>
+            <input type="number" step="0.01" name="tuition" required>
+
+            <label for="enrollment">No.of Students Enrolled:</label>
+            <input type="number" step="1" name="enrollment" required>
+
+            <button type="submit">Predict Rank</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <p><strong>{{ prediction }}</strong></p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
