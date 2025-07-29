@@ -1,5 +1,5 @@
 # National_University_Rank_Predictor
-The National University Rank Predictor is a Flask-based web application that predicts the rank of a university based on input features like tuition fee and enrollment numbers.  This application uses a deep learning model trained using TensorFlow/Keras, along with a scaler (loaded via Joblib) to normalize the inputs before prediction. 
+The National University Rank Predictor is a Flask-based web application that predicts the rank of a university based on input features like tuition fee and enrollment numbers.  This application uses a deep learning model trained using TensorFlow/Keras, along with a scaler (loaded via Joblib) to normalize the inputs before prediction.  The goal is to help students, researchers, or educational bodies get an approximate ranking of a university based on available numeric data.
 
 ## 🧠 Project Description
 This tool aims to assist:
@@ -25,5 +25,5 @@ By inputting key numerical features, users receive an **estimated rank** that re
 - **Deployment**: Localhost / Cloud-ready
 
 ## 📥 How to Run
-cd project-name
-python app.py
+1.cd project-name
+2.python app.py
